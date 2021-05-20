@@ -12,11 +12,12 @@ namespace Lernen
             Console.Write("Gib den zweiten Summanden ein:");
             string zweiterSummand = Console.ReadLine();
 
-            //Wandlung von string in int
-            int ersterSummandZahl = Convert.ToInt32(ersterSummand);
-            int zweiterSummandZahl = Convert.ToInt32(zweiterSummand);
+            //Wandlung von string in double
+            decimal ersterSummandZahl = Convert.ToDecimal(ersterSummand);
+            decimal zweiterSummandZahl = Convert.ToDecimal(zweiterSummand);
 
-            Console.WriteLine("Die Summe ist: {0}",ersterSummandZahl + zweiterSummandZahl) ;
+            decimal summe = ersterSummandZahl + zweiterSummandZahl;
+            Console.WriteLine("Die Summe ist: {0}",summe);
             Console.ReadKey();
         }
     }
